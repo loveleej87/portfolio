@@ -1,2 +1,0 @@
-# portfolio
-Jaei's portfolio

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Wedding Card</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximun-scale=1.0, user-scalable=no" />
+    
+    <link rel="stylesheet" type="text/css" href="./css/css.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    <style type="text/css">
+        /* 기본 초기화 처리 */
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background-color: #fff;
+        }
+
+        /* 이미지 설정 */
+        .bgimg, .bgimg2 {
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+        .bgimg {background-image: url("img/wedding_couple.jpg")}
+        .bgimg2 {background-image: url("img/flowers.jpg")}
+    </style>
+</head>
+
+    <body>
+        <!-- Header / Home -->
+        <header class="bgimg container filter" id="home">
+            <div class="title">
+                <h1 style="font-size:64px">Jane & John</h1>
+                <h2>Are getting married</h2>
+                <h2><b>17.02.2017</b></h2>
+            </div>
+        </header>
+
+        <!-- Nav Bar (Sticky Bottom) -->
+        <div class="bottom">
+            <div class="bar white center padding opacity hover-opacity-off" style="font-size:18px">
+                <a href="#home" style="width:25%" class="bar-item button">Home</a>
+                <a href="#us" style="width:25%" class="bar-item button">Jane & John</a>
+                <a href="#wedding" style="width:25%" class="bar-item button">Wedding</a>
+                <a href="#rsvp" style="width:25%" class="bar-item button-b">RSVP</a>
+            </div>
+        </div>
+
+        <!-- About / Jane and John -->
+        <div class="bgred padding64 filter container" id="us">
+            <div class="content">
+                <h1 class="text-g center">
+                    <b>Jane & John</b>
+                </h1>
+                <img class="filter round" src="img/wedding_couple2.jpg" style="width:100%;margin:32px 0">
+                <p><i>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</i>
+                </p>
+                <br>
+                <p class="center">
+                    <a href="#wedding" style="font-size:18px" class="button black round padding-l">Wedding Details</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Background Photo -->
+        <div class="bgimg2 container">
+            <div class="title">
+                <h1 style="font-size:64px">You Are Invited</h1>
+                <br>
+                <h2>Of course..</h2>
+            </div>
+        </div>
+
+        <!-- Wedding Information -->
+        <div class="container padding64 bgred filter center">
+            <div class="content">
+                <h1 class="text-g">
+                    <b>THE WEDDING</b>
+                </h1>
+                <img class="filter round-l" src="img/wedding_location.jpg" style="width:100%;margin:64px 0">
+                <div class="bar">
+                    <div class="half">
+                    <h2>When</h2>
+                    <p>Wedding Ceremony - 2:00pm</p>
+                    <p>Reception & Dinner - 6:00pm</p>
+                    </div>
+                    <div class="half">
+                    <h2>Where</h2>
+                    <p>Some place, an address</p>
+                    <p>Some where, some address</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <!-- RSVP Section -->
+        <div class="container padding64 bgred center">
+            <h1>HOPE YOU CAN MAKE IT!</h1>
+            <p style="font-size:18px">Kindly Respond By January, 2017</p>
+            <p>
+                <button style="font-size:24px;padding:20px 60px;color:#fff;background-color: #f44336" 
+                        class="button-r round opacity2">RSVP</button>
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bottom2">
+            <p>
+               Powered by
+               <a href="https://www.w3schools.com/w3css/default.asp" 
+                title="W3.CSS" target="_blank" class="hovertext">w3.css</a>
+            </p>
+        </footer>
+    </body>
+</html>
