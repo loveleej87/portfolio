@@ -39,6 +39,7 @@ class Notice {
         content.style.setProperty("color", '#fff', 'important');
         content.style.setProperty("font-size", '16px', 'important');
         content.style.setProperty("line-height", '150%', 'important');
+        content.style.setProperty("font-family", 'Noto Sans KR', 'important');
         content.innerHTML = `이 사이트는 이젠아카데미컴퓨터학원(강남)의<br/><u><b style="color: #cc0">${this.title}</b></u>과정을 통해 학습한 내용을 기반으로 제작되었습니다.</p><p><u><b style="color: #cc0">${myname} 훈련생의 포트폴리오</b></u>를 목적으로 하는 클론코딩 사이트이며 실제 운영되는 사이트가 아니므로 착오 없으시길 바랍니다.`;
 
         const hr = document.createElement('hr');
