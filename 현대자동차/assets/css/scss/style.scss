@@ -255,7 +255,7 @@ li {
     display: inline-block;
     width: 20px;
     height: 17px;
-    background: url(../../img/btn_topmenu_Channelh.webp) no-repeat;
+    background: url(../../img/btn_topmenu_Channelh.png) no-repeat;
     background-size: cover;
     vertical-align: middle;
 }
@@ -478,7 +478,7 @@ li {
     right: 0;
     width: 55px;
     height: 50px;
-    background: url(../../img/btn_search.webp) no-repeat center center;
+    background: url(../../img/btn_search.png) no-repeat center center;
     text-align: center;
     box-sizing: border-box;
     text-indent: -99999px;
@@ -805,13 +805,13 @@ li {
 }
 
 .sns_col a .sns_txt .icon-facebook {
-    background-image: url("../images/common/facebook.png");
+    background-image: url(../../img/facebook.png);
 }
 .sns_col a .sns_txt .icon-youtube {
-    background-image: url("../images/common/youtube.png");
+    background-image: url(../../img/youtube.png);
 }
 .sns_col a .sns_txt .icon-twitter {
-    background-image: url("../images/common/twitter.png");
+    background-image: url(../../img/twitter.png);
 }
 
 /* footer
@@ -872,7 +872,7 @@ li {
     width: 10px;
     height: 10px;
     margin: -1px 0 0 8px;
-    background-image: url(../../img/ico_link.webp);
+    background-image: url(../../img/ico_link.png);
     vertical-align: middle;
 }
 

@@ -36,7 +36,7 @@ document.querySelector('#company').addEventListener('mouseover', (e) => {
     dimmed.style.height = '0';
     lanList.style.display = 'none';
     language.className = 'language';
-    lanbtn.classList.toggle('on');
+    lanbtn.classList.remove('on');
 });
 
 
