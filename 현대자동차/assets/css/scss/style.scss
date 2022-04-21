@@ -50,7 +50,7 @@ strong {
     color: #000;
 }
 
-li:hover,
+.mainmenu li:hover,
 a:hover {
     color: $navy;
 }
@@ -862,10 +862,6 @@ li {
     color: #fff;
 }
 
-.footerList2:hover {
-    opacity: 1;
-}
-
 .footerList2[target="_blank"]:after {
     content: "";
     display: inline-block;
@@ -880,18 +876,23 @@ li {
     display: flex;
 }
 
+.footerList li ul li {
+    cursor: pointer;
+}
+
 .boxLink {
     display: flex;
     padding-bottom: 10px;
     opacity: 0.5;
 }
 
-.boxLink:hover {
+.boxLink dd img:hover {
     opacity: 1;
 }
 
 .boxLink img {
     width: 21px;
+    cursor: pointer;
 }
 
 .boxLink dd + dd {
