@@ -1,79 +1,531 @@
 <!--
  * @filename        : index.html
  * @author          : 이재이 (loveleej87@gmail.com)
- * @description     : html 소스 파일
+ * @description     : html 소스
 -->
 
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/css/style.min.css" />
 
     <title>Document</title>
 </head>
 
-<body>
+<body style="zoom: 1;">
     <!-- Header -->
-    <div class="menuwrapfull opensub" style="overflow: hidden;">
-        <div id="menu" class="topmenu">
-            <div class="menuwrap">
-                <div class="menuwrapinner">
-                    <div class="topbar" data-isauthor="false">
-                        <!-- logo -->
-                        <div class="logo">
-                            <a href="#"><img src="assets/img/logo.webp" width="155px" alt="logo"></a>
+    <div class="menuwrapfull">
+        <div class="menuwrapinner">
+            <!-- logo -->
+            <div class="logo">
+                <img src="assets/img/logo.webp" width="155px" alt="logo">
+            </div>
+            <!-- center menu -->
+            <div id="mainmenu" class="mainmenu">
+                <ul>
+                    <li class="menu" id="menu1"><a href="#">브랜드</a></li>
+                    <li class="menu" id="menu2"><a href="#">아이오닉</a></li>
+                    <li class="menu" id="menu3"><a href="#">라이프스타일</a></li>
+                    <li class="menu" id="menu4"><a href="#" target="_blank">모델</a></li>
+                    <li class="menu" id="company"><a class="dep1_a icon_arr_right_01_bl">회사소개</a></li>
+                    <!-- sub bar -->
+                    <div class="submenuArea" id="companySub">
+                        <ul class="submenuwrap">
+                            <li class="subList"><a class="#">기업이념</a></li>
+                            <li class="subList"><a class="#">지속가능성</a></li>
+                            <li class="subList"><a class="#">해외사업망</a></li>
+                            <li class="subList"><a class="#">IR정보</a></li>
+                            <li class="subList"><a class="#" target="_blank">뉴스</a></li>
+                            <li class="subList"><a class="#" target="_blank">문의하기</a></li>
+                        </ul>
+                        <div class="spinBtn" id="exitSubmenu">
+                            <button class="btnClose"></button>
                         </div>
-                        <!-- center menu -->
-                        <div id="menu" class="menu">
+                    </div>
+                </ui>
+            </div>
+
+            <!-- icon -->
+            <div class="rightArea">
+                <ul class="itemMenu">
+                    <li class="item"><a href="#" class="btnLanguage"></a></li>
+                    <li class="item"><a href="#" class="btnChannel"></a></li>
+                    <li class="item"><a href="#" class="btnSearch" id="btnSearch"></a>
+
+                        <!-- search area -->
+                        <div class="searchArea">
+                            <div class="search">
+                                <div class="searchInput">
+                                    <input class="inputText" placeholder="검색어를 입력해 주세요." type="search">
+                                </div>
+                                <button class="btnSearch2">검색</button>
+                            </div>
+                            <div class="gnbTopic">
+                                <span class="topicTit">추천 검색어</span>
+                                <div class="topicList">
+                                    <button>IONIQ 5</button>
+                                    <button>NEXO</button>
+                                    <button>Elantra</button>
+                                    <button>Kona</button>
+                                    <button>Sustainability</button>
+                                    <button>EV</button>
+                                </div>
+                            </div>
+                                <button class="btnClose2"></button>
+                        </div>
+                    </li>
+                    
+                    <!-- language area -->
+                    <li class="item lanbtn" id="lanbtn">
+                        <button class="language" id="language">Language</button>
+                        <div class="lanList">
                             <ul>
-                                <span class="menu"><a href="#">브랜드</a></span>
-                                <span class="menu"><a href="#">아이오닉</a></span>
-                                <span class="menu"><a href="#">라이프스타일</a></span>
-                                <span class="menu"><a href="#">모델</a></span>
-                                <span class="menu">
-                                    <ul class="dropdown">
-                                        <span class="dropbtn">회사소개</span>
-                                        <ul class="dropdown-content">
-                                            <span><a href="#">기업이념</a></span>
-                                            <span><a href="#">지속가능성</a></span>
-                                            <span><a href="#">해외사업망</a></span>
-                                            <span><a href="#">IR정보</a></span>
-                                            <span><a href="#">뉴스</a></span>
-                                            <span><a href="#">문의하기</a></span>
-                                        </ul>
-                                </span>
-                            </ul>
+                                <li><a href="#" target="_self" title="English">English</a></li>
+                                <li><a href="#" target="_self" title="한국어"><strong>한국어</strong></a></li>
                             </ul>
                         </div>
-                        <!-- icon -->
-                        <div class="rightArea">
-                            <li class="item">
-                                <a href="#" class="btnLanguage">
-                                </a>
-                            </li>
-                            <li class="item">
-                                <a href="#" class="btnChannel">
-                                </a>
-                            </li>
-                            <li class="item">
-                                <a href="#" class="btnSearch">
-                                </a>
-                            </li>
-                            <span>Language</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="dimmed"></div>
+    
+    <!-- hashtag #-->
+    <div class="topicwrap">
+        <div class="topicCon">
+            <div class="hashtag">
+                <ul>
+                    <li><a href="#ionic5 hashtaglink" data-target="ionic5"># 아이오닉 5</a></li>
+                    <li><a href="#"># 인터뷰</a></li>
+                    <li><a href="#"># 넥쏘</a></li>
+                    <li><a href="#"># 브랜드비전</a></li>
+                    <li><a href="#"># 현대자동차 x 방탄소년단</a></li>
+                    <li><a href="#"># 아임인차지</a></li>
+                    <li><a href="#"># for Tmorrow</a></li>
+                    <li><a href="#"># 현대자동차 x 블룸버그 </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- container -->
+    <div class="container">
+        <!-- main contents -->
+        <div id="mainCon" class="mainCon" data-contents="mainCon">
+            <!-- main pic 1 -->
+            <section class="mainarea" style="padding-top: 75px; padding-bottom: 75px;">
+                <div class="mainCon1 mainConBox">
+                    <div class="mainPic">
+                        <h2 class="mainConTit">
+                            <span class="category">지속가능한 생활</span>
+                            <span>
+                                <p>나만의 도시 정원을 가꾸는 법</p>
+                            </span>
+                        </h2>
+                        <div>
+                            <a href="/worldwide/ko/lifestyle/how-to-create-your-own-urban-garden" target="_self"
+                                data-track-name="main^article" data-track-description="지속가능한 생활 ^ 나만의 도시 정원을 가꾸는 법">
+                                <img src="../현대자동차/assets/img/40-lifestyle-urban-gardening-pc-736.webp">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="subPic">
+                        <h2 class="subConTit">
+                            <span class="category" style="color: #fff" ;>지속가능 모빌리티</span>
+                            <span>
+                                <p>Power your beat: 아이오닉 5의
+                                    <br>
+                                    파워를 이용한 DJ공연
+                                </p>
+                            </span>
+                        </h2>
+                        <div>
+                            <a href="/worldwide/ko/ioniq/power-your-beat-dj-set" target="_self"
+                                data-track-name="main^article"
+                                data-track-description="지속가능한 생활 ^ Power your beat: 아이오닉 5의 파워를 이용한 DJ공연">
+                                <img src="../현대자동차/assets/img/11-ioniq-power-your-beat-pc-352x390.webp">
+                            </a>
                         </div>
                     </div>
                 </div>
+            </section>
+            <!-- main pic 2 -->
+            <section class="mainarea" style="padding-top: 25px; padding-bottom: 25px;">
+                <div class="contBox1 contBox2">
+                    <div class="picframe2">
+                        <a href="/worldwide/ko/brand/how-to-drive-a-high-performance-car" target="_self"
+                            data-track-name="main^article" data-track-description="고성능 ^  고성능 차를 운전하는 방법" <="" sly="">
+                            <img src="../현대자동차/assets/img/05-n-drive-high-performance-pc-448.webp">
+                        </a>
+                        <h3 class="conTit">
+                            <span class="category">고성능</span>
+                            <span>
+                                <p>고성능 차를 운전하는 방법</p>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="picframe3">
+                        <a href="/worldwide/ko/brand/asmr-tucson" target="_self" data-track-name="main^article"
+                            data-track-description="파트너십 ^  현대자동차 × WhisperAudios ASMR – 투싼과 함께 ASMR 사운드스케이프를 제작하다" <=""
+                            sly="">
+                            <img src="../현대자동차/assets/img/86-brand-tucson-asmr-pc-352x400.webp">
+                        </a>
+                        <h3 class="conTit">
+                            <span class="category">파트너십</span>
+                            <span>
+                                <p>현대자동차 x WhisperAudios ASMR - 투싼과 함께 ASMR 사운드스케이프를 제작하다</p>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="picframe4">
+                        <a href="/worldwide/ko/ioniq/chasing-stars-with-ioniq-5" target="_self"
+                            data-track-name="main^article"
+                            data-track-description="아이오닉 ^  밤하늘 별자리를 만나다: 아이오닉 5와 함께 맞이하는 새해" <="" sly="">
+                            <img src="../현대자동차/assets/img/10-chasing-stars-pc-256.webp">
+                        </a>
+                        <h3 class="conTit">
+                            <span class="category">아이오닉</span>
+                            <span>
+                                <p>밤하늘 별자리를 만나다: 아이오닉 5와 함께 맞이하는 새해</p>
+                            </span>
+                        </h3>
+                    </div>
+                </div>
+            </section>
+            <!-- main pic 3 -->
+            <section class="mainarea" style="padding-top: 25px; padding-bottom: 25px;">
+                <div class="contBox1 contBox2">
+                    <div class="picframe4">
+                        <a href="/worldwide/ko/ioniq/ioniq-forest-sinsido-project" target="_self"
+                            data-track-name="main^article"
+                            data-track-description="아이오닉 ^  아이오닉 포레스트 신시도 프로젝트: 다음 세대를 위한 나무 심기" <="" sly="">
+                            <img src="../현대자동차/assets/img/09-ioniq-forest-pc-256.webp">
+                        </a>
+                        <h3 class="conTit">
+                            <span class="category">아이오닉</span>
+                            <span>
+                                <p>아이오닉 포레스트 신시도 프로젝트: 다음 세대를 위한 나무 심기</p>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="picframe2">
+                        <a href="/worldwide/ko/brand/ces-2022" target="_self" data-track-name="main^article"
+                            data-track-description="브랜드 ^  CES 2022: 현대자동차, 로보틱스와 메타버스가 결합된 메타모빌리티로 이동 경험의 영역을 확장하다"
+                            <="" sly="">
+                            <img src="../현대자동차/assets/img/85-brand-ces-2022-pc-448.webp">
+                        </a>
+                        <h3 class="conTit">
+                            <span class="category">브랜드</span>
+                            <span>
+                                <p>CES 2022: 현대자동차, 로보틱스와 메타버스가 결합된 메타모빌리티로 이동 경험의 영역을 확장하다</p>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="picframe3">
+                        <a href="/worldwide/ko/ioniq/david-de-rothschild-hyundai-part-4" target="_self"
+                            data-track-name="main^article"
+                            data-track-description="아이오닉 ^  데이비드 드 로스차일드 × 현대자동차 - 차세대 탐험가에게 주는 영감" <="" sly="">
+                            <img src="../현대자동차/assets/img/08-ioniq-david-de-rothschild-part4-pc-352x400.webp">
+                        </a>
+                        <h3 class="conTit">
+                            <span class="category">아이오닉</span>
+                            <span>
+                                <p>데이비드 드 로스차일드 × 현대자동차 - 차세대 탐험가에게 주는 영감</p>
+                            </span>
+                        </h3>
+                    </div>
+                </div>
+            </section>
+            <!-- main pic 4 -->
+            <section class="mainarea" style="padding-top: 25px; padding-bottom: 25px;">
+                <div class="contBox1 contBox2">
+                    <div class="picframe3">
+                        <a href="/worldwide/ko/ioniq/david-de-rothschild-hyundai-part-3" target="_self"
+                            data-track-name="main^article"
+                            data-track-description="아이오닉 ^  데이비드 드 로스차일드 × 현대자동차 – 모빌리티의 미래" <="" sly="">
+                            <img src="../현대자동차/assets/img/07-ioniq-david-de-rothschild-part3-pc-352x400.webp">
+                        </a>
+                        <h3 class="conTit">
+                            <span class="category">아이오닉</span>
+                            <span>
+                                <p>데이비드 드 로스차일드 × 현대자동차 – 모빌리티의 미래</p>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="picframe3">
+                        <a href="/worldwide/ko/ioniq/david-de-rothschild-hyundai-part-2" target="_self"
+                            data-track-name="main^article"
+                            data-track-description="아이오닉 ^  데이비드 드 로스차일드 × 현대자동차 – 자연에게 목소리를 주다" <="" sly="">
+                            <img src="../현대자동차/assets/img/06-ioniq-david-de-rothschild-part2-pc-352x400.jpg">
+                        </a>
+                        <h3 class="conTit">
+                            <span class="category">브랜드</span>
+                            <span>
+                                <p>데이비드 드 로스차일드 × 현대자동차 – 자연에게 목소리를 주다</p>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="picframe3">
+                        <a href="/worldwide/ko/ioniq/david-de-rothschild-hyundai-part-1" target="_self"
+                            data-track-name="main^article"
+                            data-track-description="아이오닉 ^  데이비드 드 로스차일드 × 현대자동차 - 자연 환경 보호를 최우선으로 하는 협업" <="" sly="">
+                            <img src="../현대자동차/assets/img/05-ioniq-david-de-rothschild-part1-pc-352x400.webp">
+                        </a>
+                        <h3 class="conTit">
+                            <span class="category">아이오닉</span>
+                            <span>
+                                <p>데이비드 드 로스차일드 × 현대자동차 - 자연 환경 보호를 최우선으로 하는 협업</p>
+                            </span>
+                        </h3>
+                    </div>
+                </div>
+            </section>
+            <!-- main pic 5 -->
+            <section class="mainarea" style="padding-top: 25px; padding-bottom: 25px;">
+                <div class="contBox1 contBox2">
+                    <div class="picframe2">
+                        <a href="/worldwide/ko/brand/heritage-series-grandeur" target="_self"
+                            data-track-name="main^article"
+                            data-track-description="브랜드 ^  헤리티지 시리즈 그랜저: 모던하게 재탄생된 1986년 플래그십 세단" <="" sly="">
+                            <img src="../현대자동차/assets/img/84-brand-heritage-grandeur-pc-448.webp">
+                        </a>
+                        <h3 class="conTit">
+                            <span class="category">브랜드</span>
+                            <span>
+                                <p>헤리티지 시리즈 그랜저: 모던하게 재탄생된 1986년 플래그십 세단</p>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="picframe3">
+                        <a href="/worldwide/ko/brand/ev-literacy-britta-reineke-part-3" target="_self"
+                            data-track-name="main^article"
+                            data-track-description="브랜드 ^  브리타 라이니키 × 현대자동차 – 전기차 주행에 관한 다섯 가지 질문" <="" sly="">
+                            <img src="../현대자동차/assets/img/83-brand-ev-literacy-part-three-pc-352x400.webp">
+                        </a>
+                        <h3 class="conTit">
+                            <span class="category">브랜드</span>
+                            <span>
+                                <p>브리타 라이니키 × 현대자동차 – 전기차 주행에 관한 다섯 가지 질문</p>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="picframe4">
+                        <a href="/worldwide/ko/ioniq/introducing-the-seven-concept" target="_self"
+                            data-track-name="main^article"
+                            data-track-description="아이오닉 ^  아이오닉 콘셉트카 '세븐' : &quot;나만의 시간(Me Time)&quot;과 &quot;가족과의 시간(Family Time)&quot;을 위한 혁신"
+                            <="" sly="">
+                            <img src="../현대자동차/assets/img/04-ioniq-seven-pc-256.webp">
+                        </a>
+                        <h3 class="conTit">
+                            <span class="category">아이오닉</span>
+                            <span>
+                                <p>아이오닉 콘셉트카 '세븐' : "나만의 시간(Me Time)"과 "가족과의 시간(Family Time)"을 위한 혁신
+                                </p>
+                            </span>
+                        </h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- bottom padding -->
+        <div style="padding-top: 25px; padding-bottom: 150px;">
+        </div>
+
+        <!-- main worldwide site -->
+        <div>
+            <section class="bgBl" style="padding-top: 150px; padding-bottom: 150px;">
+                <div class="mainConBox">
+                    <div class="bgCon">
+                        <div class="imgArea">
+                            <img src="../현대자동차/assets/img/main-hyundai-in-your-country-pc.webp">
+                        </div>
+                        <div class="txtArea">
+                            <h2 class="secTit">
+                                국가별 사이트를
+                                <br>
+                                방문해 보세요.
+                            </h2>
+                            <p class="desc"></p>
+                            <p>국가별 사이트를 방문하면 더 자세한 정보를</p>
+                            <p>확인할 수 있습니다.</p>
+                            <p>&nbsp;</p>
+                            <a href="/worldwide/ko/onepage/country.kr" id="contryPage" class="btn">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- social media -->
+        <div class="main-social">
+            <section clsas="bgLB" style="padding-top: 70px; padding-bottom: 100px;">
+                <div class="contBox2" id="main_social">
+                    <h2 class="socTit">
+                        <span class="category">소셜미디어</span>
+                        소셜미디어 둘러보기
+                    </h2>
+                    <div>
+                        <ul class="sns_area">
+                            <!-- social (1) -->
+                            <li class="sns_col"
+                                style="background-image:url(../현대자동차/assets/img/worldwide-main-instagram-01-8iihs-220315.webp)">
+                                <a href="https://www.instagram.com/p/Ca3LimLKynU/?taken-by=hyundai_worldwide"
+                                    target="_blank" title="view on instagram">
+                                    <span class="sns_txt">
+                                        2022년, 현대자동차 8개 차종이 미국 IIHS 충돌평가에서 최고안전한차로 선정되었습니다. @iihs_autosafety #AutoSafety
+                                        <span class="icon-IG"> </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <!-- social (2) -->
+                            <li class="sns_col"
+                                style="background-image:url(../현대자동차/assets/img/worldwide-main-instagram-02-womens-day-220315.webp)">
+                                <a href="https://www.instagram.com/p/Ca07Q8kIAQU/?taken-by=hyundai_worldwide"
+                                    target="_blank" title="view on instagram">
+                                    <span class="sns_txt">
+                                        여러분이 없었다면, 세상은 분명 지금과는 달랐을 것입니다.
+                                        <br>
+                                        #InternationalWomensDay
+                                        <span class="icon-IG"> </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <!-- social (3) -->
+                            <li class="sns_col"
+                                style="background-image:url(../현대자동차/assets/img/worldwide-main-instagram-03-ioniq5-220315.webp)">
+                                <a href="https://www.instagram.com/p/CarRgBarKow/?taken-by=hyundai_worldwide"
+                                    target="_blank" title="view on instagram">
+                                    <span class="sns_txt">
+                                        아이오닉 5 고객의 50% 이상이 선택한 스마트 센스 패키지
+                                        <br>
+                                        #PowerYourWorld
+                                        <span class="icon-IG"> </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <!-- social (4) -->
+                            <li class="sns_col"
+                                style="background-image:url(../현대자동차/assets/img/worldwide-main-instagram-04-asmr-220315.webp)">
+                                <a href="https://www.instagram.com/p/CaUGs3fj_Ks/?taken-by=hyundai_worldwide"
+                                    target="_blank" title="view on instagram">
+                                    <span class="sns_txt">
+                                        🔊 온몸의 긴장을 풀고 편안한 휴식을 만끽하고 싶다면?
+                                        <br>
+                                        #ASMcaR
+                                        <span class="icon-IG"> </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <!-- social (5) -->
+                            <li class="sns_col"
+                                style="background-image:url(../현대자동차/assets/img/worldwide-main-instagram-05-asmr-220315.webp)">
+                                <a href="https://www.instagram.com/p/Ca07Q8kIAQU/?taken-by=hyundai_worldwide"
+                                    target="_blank" title="view on instagram">
+                                    <span class="sns_txt">
+                                        🔊 편안히 몸을 기대고 지금 이 순간을 즐겨보세요!
+                                        <br>
+                                        #ASMcaR
+                                        <span class="icon-IG"> </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <!-- social (6) -->
+                            <li class="sns_col"
+                                style="background-image:url(../현대자동차/assets/img/worldwide-main-instagram-06-asmr-220315.webp)">
+                                <a href="https://www.instagram.com/p/CarRgBarKow/?taken-by=hyundai_worldwide"
+                                    target="_blank" title="view on instagram">
+                                    <span class="sns_txt">
+                                        🔊 헤드폰을 끼고, 투싼 ASMR과 함께 고요하고 평안한 시간 속으로 빠져보세요.
+                                        <br>
+                                        #ASMcaR
+                                        <span class="icon-IG"> </span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- footer -->
+        <div class="footerwrap">
+            <div class="footerArea">
+                <p class="footerLogo">
+                    <img src="../현대자동차/assets/img/footer_logo_pc.webp" style="opacity: 1;">
+                </p>
+                <div class="footerMenu">
+                    <ul class="footerList">
+                        <!-- list (1) -->
+                        <li>
+                            <div>문의/법적고지</div>
+                            <ul>
+                                <li class="footerList2">법적고지</li>
+                                <li class="footerList2">개인정보 처리방침</li>
+                                <li class="footerList2">쿠키정책</li>
+                                <li class="footerList2">사이트맵</li>
+                            </ul>
+                        </li>
+                        <!-- list (2) -->
+                        <li>
+                            <div>기업소개</div>
+                            <ul>
+                                <li class="footerList2">관계사</li>
+                                <li class="footerList2">사업망</li>
+                                <li class="footerList2" target="_blank">협력업체</li>
+                                <li class="footerList2">모델 히스토리</li>
+                            </ul>
+                        </li>
+                        <!-- list (3) -->
+                        <li>
+                            <div>관련 사이트</div>
+                            <ul>
+                                <li class="footerList2" target="_blank">N</li>
+                                <li class="footerList2" target="_blank">현대 모터스튜디오</li>
+                                <li class="footerList2" target="_blank">채널현대</li>
+                                <li class="footerList2" target="_blank">현대아트랩</li>
+                            </ul>
+                        </li>
+                        <!-- list (4) -->
+                        <li>
+                            <div>Hyundai Social Media</div>
+                            <dl>
+                                <div class="socialArea">
+                                    <div>
+                                        <dt class="footerList2">Worldwide</dt>
+                                        <div class="boxLink">
+                                            <dd><img src="../현대자동차/assets/img/facebook.webp"></dd>
+                                            <dd><img src="../현대자동차/assets/img/instagram.png"></dd>
+                                            <dd><img src="../현대자동차/assets/img/youtube.webp"></dd>
+                                            <dd><img src="../현대자동차/assets/img/twitter.webp"></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="socialArea">
+                                    <div>
+                                        <dt class="footerList2">Lifestyle</dt>
+                                        <div class="boxLink">
+                                            <dd><img src="../현대자동차/assets/img/instagram.png"></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <p class="copyright">ⓒ 2022 Hyundai Motor Company</p>
             </div>
         </div>
-
-
-
-
-
-
-
-        <div class="containerwrap main" id="container">
-        </div>
+    <script src="../현대자동차/assets/js/include.js"></script>
+    <script src="../popup_test/notice.js"></script>
+    <script>
+        // Notice.init('본인이름', 'pdf파일경로');
+        Notice.init('이재이', './현대자동차_클론코딩_이재이.pdf');
+    </script>
+</body>
+</html>
