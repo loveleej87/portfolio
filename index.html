@@ -24,7 +24,11 @@
         a {
             list-style: none;
             text-decoration: none;
-            margin: 10px 0;
+            margin: 12px 0;
+        }
+
+        li:hover {
+            background-color: #eee;
         }
 
         a:link {
@@ -32,22 +36,40 @@
         }
 
         a:visited {
-            color: #666;
+            color: #000;
+        }
+
+        .css {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-left: 0;
+        }
+
+        .react {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-left: 0;
         }
     </style>
 </head>
 
 <body>
-    <h1>Jaei's Portfolio</h1>
+    <h1>Portfolio by Leejaei</h1>
     <hr />
     <ul>
-        <li><a href="./website-01/index.html">클론코딩(1)</a></li>
-        <li><a href="./website-02/index.html">클론코딩(2)</a></li>
-        <li><a href="./website-03/index.html">클론코딩(3)</a></li>
-        <li><a href="./website-04/index.html">클론코딩(4)</a></li>
-        <li><a href="./website-05/index.html">클론코딩(5)</a></li>
-        <li><a href="./hyundaicar/index.html">현대자동차</a></li>
-        <li><a href="https://loveleej87.github.io/portfolio/kakao-openapi/">카카오 검색 api 연동</a></li>
+        <div class="css">
+        <li><a href="./website-01/index.html"><h2>클론코딩 01</h2></a></li>
+        <li><a href="./website-02/index.html"><h2>클론코딩 02</h2></a></li>
+        <li><a href="./website-03/index.html"><h2>클론코딩 03</h2></a></li>
+        <li><a href="./website-04/index.html"><h2>클론코딩 04</h2></a></li>
+        <li><a href="./website-05/index.html"><h2>클론코딩 05</h2></a></li>
+        </div>
+        <div class="react">
+        <li><a href="./hyundaicar/index.html"><h2>현대자동차</h2></a></li>
+        <li><a href="https://loveleej87.github.io/portfolio/kakao-openapi/"><h2>카카오 검색 api 연동(React)</h2></a></li>
+        </div>
     </ul>
 
 </html>
